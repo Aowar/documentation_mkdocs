@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Urls - Описание сервиса обхода квартир</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Urls";
+    var mkdocs_page_input_path = "urls.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="icon icon-home"> Описание сервиса обхода квартир</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">База данных</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="forms.html">Формы</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="views.html">Views</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="urls.html">Urls</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#basehtml">base.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adress_updatehtml">adress_update.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#address_createhtml">address_create.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#address_deletehtml">address_delete.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adress_detailhtml">adress_detail.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#adress_listhtml">adress_list.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#loginhtml">login.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logouthtml">logout.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#menuhtml">menu.html</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#registerhtml">register.html</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Описание сервиса обхода квартир</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Urls</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="urls">Urls</h1>
+<p>Код urls.py</p>
+<h2 id="basehtml">base.html</h2>
+<pre><code>{% load crispy_forms_tags %}
+&lt;div class="content-text"&gt;
+&lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet", type="text/css"&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"&gt;&lt;/script&gt;
+{% block content %}
+{% endblock %}
+{% if page_obj.has_other_pages %}
+&lt;br&gt;&lt;nav class="list-pages"&gt;&lt;/br&gt;
+            &lt;ul&gt;
+            {% if page_obj.has_previous %}
+            &lt;a class="page-num"&gt;
+                &lt;a class="page-item" href="?page={{ page_obj.previous_page_number }}{% if request.GET.q %}&amp;q=
+                    {{request.GET.q }}{% endif %}"&gt;&amp;lt;&lt;/a&gt;
+                &lt;/a&gt;
+            {% endif %}
+                {% for p in paginator.page_range %}
+            {% if page_obj.number == p %}
+            &lt;a class="page-num page-num-selected"&gt;{{ p }}&lt;/a&gt;
+            {% elif p &gt;= page_obj.number|add:-2 and p &lt;= page_obj.number|add:2 %}
+            &lt;a class="page-num"&gt;
+                &lt;a class="page-item" href="?page={{ p }}{% if request.GET.q %}&amp;q=
+                    {{request.GET.q }}{% endif %}"&gt;{{ p }}&lt;/a&gt;
+                &lt;/a&gt;
+            {% endif %}
+                {% endfor %}
+            {% if page_obj.has_next %}
+            &lt;a class="page-num"&gt;
+                &lt;a class="page-item" href="?page={{ page_obj.next_page_number }}{% if request.GET.q %}&amp;q=
+                    {{request.GET.q }}{% endif %}"&gt;&amp;gt;&lt;/a&gt;
+                &lt;/a&gt;
+            {% endif %}
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+{% endif %}
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="adress_updatehtml">adress_update.html</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+{% extends 'menu.html' %}
+{% block content %}
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+        &lt;meta name="viewport" content="width=device-width" /&gt;
+        &lt;title&gt;Adress update&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;form method="post"&gt; {% csrf_token %}
+            {{ form.as_p }}
+            &lt;input type="submit" class="btn btn-success" value="Update"&gt;
+            &lt;input type="button" class="btn btn-danger" onclick="history.back();" value="Cancel"/&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+{% endblock %}
+&lt;/html&gt;
+</code></pre>
+<p>Используется для обновления адресов</p>
+<h2 id="address_createhtml">address_create.html</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+{% extends 'menu.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;div class="container-fluid m-2"&gt;
+        &lt;form method="POST" enctype="multipart/form-data"&gt;
+            {%csrf_token%}
+                {{ form|crispy }}
+            &lt;input class="btn btn-success" type="submit" value="Add address"&gt;
+                &lt;input type="button" class="btn btn-outline-primary" onclick="location.href='/adress_list/'" value="Cancel"/&gt;
+        &lt;/form&gt;
+        {%if form.errors%}
+            &lt;div class="text"&gt;Try Again&lt;/div&gt;
+        {%endif%}
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/head&gt;
+{% endblock %}
+&lt;/html&gt;
+</code></pre>
+<p>Используется для создания адресов</p>
+<h2 id="address_deletehtml">address_delete.html</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+{% extends 'menu.html' %}
+{% block content %}
+{% if request.user.is_authenticated %}
+{%if user.is_staff%}
+    &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width" /&gt;
+        &lt;title&gt;Address delete&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;form method="post" accept-charset="utf-8"&gt;
+            {% csrf_token %}
+            &lt;h1 class="h3"&gt;Delete?&lt;/h1&gt;
+            &lt;br&gt;&lt;input type="submit" class="btn btn-primary" value="Yes"/&gt;
+            {% endif %}
+{% endif %}
+            &lt;input type="button" class="btn btn-danger"  onclick="history.back();" value="Cancel"/&gt;&lt;/br&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+{% endblock %}
+&lt;/html&gt;
+</code></pre>
+<p>Используется для удаления адресов</p>
+<h2 id="adress_detailhtml">adress_detail.html</h2>
+<pre><code>{% extends 'menu.html' %}
+{% block content %}
+&lt;ul&gt;
+    &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+&lt;/head&gt;
+    {% load crispy_forms_tags %}
+    &lt;h4 class="card-title"&gt;Adress detail&lt;/h4&gt;
+        &lt;div&gt;
+                                    &lt;div class="text-secondary"&gt;&lt;strong&gt;Address id:&lt;/strong&gt;&lt;/div&gt;
+                                    &lt;div class="text-primary"&gt;&lt;strong&gt;{{ object.idAdress }}&lt;/strong&gt;&lt;/div&gt;
+                                    &lt;div class="text-secondary"&gt;District:&lt;/div&gt;
+                                    &lt;div class="text-primary"&gt;{{ object.district }}&lt;/div&gt;
+                                    &lt;div class="text-secondary"&gt;Street:&lt;/div&gt;
+                                    &lt;div class="text-primary"&gt;{{ object.street }}&lt;/div&gt;
+            {% if request.user.is_authenticated %}
+            {%if user.is_staff%}
+            {%if user.is_superuser%}
+                                    &lt;br&gt;&lt;input type="button" class="btn btn-primary" onclick="location.href='http://127.0.0.1:8000/adress_detail/update/{{object.idAdress}}/'" value="Update"/&gt; &lt;input type="button" class="btn btn-danger" onclick="location.href='http://127.0.0.1:8000/adress_detail/delete/{{object.idAdress}}/'" value="Delete"/&gt;&lt;/br&gt;
+            {% endif %}
+            {% endif %}
+            {% endif %}
+            &lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+            &lt;div class="col-8"&gt;
+                &lt;br&gt;&lt;input type="button" class="btn btn-outline-primary" onclick="location.href='/adress_list/'" value="Get back"/&gt;&lt;/br&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/ul&gt;
+{% endblock %}
+</code></pre>
+<p>Используется для детального просмотра адресов</p>
+<h2 id="adress_listhtml">adress_list.html</h2>
+<pre><code>{% extends 'base.html' %}
+{% block content%}
+&lt;head&gt;
+&lt;nav class="navbar nav-pills nav-fill bg-dark"&gt;
+
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/menu/'" value="Menu"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/renters/'" value="Renters"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" disabled onclick="location.href='http://127.0.0.1:8000/adress_list/'" value="Addresses"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/house_list/'" value="Buildings"/&gt;&lt;/a&gt;
+    {% if request.user.is_authenticated %}
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/flats/'" value="Flats"/&gt;&lt;/a&gt;
+    {%if user.is_staff%}
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/inspector_list/'" value="Inspectors"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/bypass_list/'" value="Bypasses"/&gt;&lt;/a&gt;
+    {% endif %}
+    &lt;li class="last"&gt; &lt;a class="text-light"&gt; {{user.username}} &lt;strong&gt;|&lt;/strong&gt;&lt;/a&gt; &lt;u&gt;&lt;a class="text-light" href="/logout/"&gt;Log out&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;
+{% else %}
+    &lt;li class="last"&gt;&lt;u&gt;&lt;a class="text-light" href="http://127.0.0.1:8000/register/"&gt; Sign up &lt;/a&gt;&lt;/u&gt; &lt;a&gt;|&lt;/a&gt; &lt;u&gt;&lt;a class="text-light" href="http://127.0.0.1:8000/login/"&gt; Log in&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;
+{% endif %}
+&lt;/nav&gt;
+&lt;/head&gt;
+    &lt;ul&gt;
+    {% load crispy_forms_tags %}
+    &lt;h4 class="card-title"&gt;Addresses&lt;/h4&gt;
+    &lt;!-- Iterate over object_list --&gt;
+    {% for object in object_list %}
+    &lt;!-- Display Objects --&gt;
+        &lt;div&gt;
+                                    &lt;div class="text-secondary"&gt;&lt;strong&gt;Address id:&lt;/strong&gt;&lt;/strong&gt;&lt;/div&gt;
+                                    &lt;div class="text-primary"&gt;&lt;strong&gt;{{ object.idAdress }}&lt;/strong&gt;&lt;/div&gt;
+                                    &lt;div class="text-secondary"&gt;District:&lt;/div&gt;
+                                    &lt;div class="text-primary"&gt;{{ object.district }}&lt;/div&gt;
+                                    &lt;div class="text-secondary"&gt;Street:&lt;/div&gt;
+                                    &lt;div class="text-primary"&gt;{{ object.street }}&lt;/div&gt;
+                                    &lt;br&gt;&lt;input type="button" class="btn btn-secondary" onclick="location.href='/adress_detail/{{object.idAdress}}/'" value="Address detail"/&gt;&lt;/br&gt;
+            &lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+                                    &lt;!-- If objet_list is empty  --&gt;
+    {% empty %}
+    &lt;li&gt;No objects yet.&lt;/li&gt;
+    {% endfor %}
+            {%if user.is_authenticated%}
+        {%if user.is_staff%}
+            {%if user.is_superuser%}
+            &lt;div class="col-8"&gt;
+                &lt;br&gt;&lt;input type="button" class="btn btn-outline-primary" onclick="location.href='/adress_list/create/'" value="Address create"/&gt;&lt;/br&gt;
+            &lt;/div&gt;
+            {% endif %}
+            {%endif%}
+        {%endif%}
+            {% endblock %}
+    &lt;/div&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Используется для просмотра адресов
+Для остальных моделей html файлы аналогичны</p>
+<h2 id="loginhtml">login.html</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;div class="container-fluid m-2"&gt;
+        &lt;form method="POST"  enctype="multipart/form-data" &gt;
+            {% csrf_token %}
+
+            &lt;div class="form-error"&gt;{{ f.non_field_errors }}&lt;/div&gt;
+
+                {% for f in form %}
+            &lt;p&gt;&lt;label class="form-label" for="{{ f.id_for_label }}"&gt;{{f.label}}: &lt;/label&gt;{{ f }}&lt;/p&gt;
+            &lt;div class="form-error"&gt;{{ f.errors }}&lt;/div&gt;
+            {% endfor %}
+            &lt;input class="btn btn-success" type="submit" value="Log in"&gt;
+            &lt;input type="button" class="btn btn-danger" onclick="history.back();" value="Cancel"/&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Используется для авторизации пользователя</p>
+<h2 id="logouthtml">logout.html</h2>
+<pre><code>{% block content %}
+
+&lt;div class="content"&gt;
+    &lt;div class="section-inner clearfix"&gt;
+
+    &lt;p&gt;You are logged out. &lt;a href="{% url 'blog_login' %}"&gt;Click here&lt;/a&gt; to login again.&lt;/p&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+{% endblock %}'
+</code></pre>
+<p>Используется для выхода из аккаунта</p>
+<h2 id="menuhtml">menu.html</h2>
+<pre><code>&lt;head&gt;
+&lt;nav class="navbar nav-pills nav-fill bg-dark"&gt;
+
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/menu/'" value="Menu"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/renters/'" value="Renters"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/adress_list/'" value="Addresses"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/house_list/'" value="Buildings"/&gt;&lt;/a&gt;
+    {% if request.user.is_authenticated %}
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/flats/'" value="Flats"/&gt;&lt;/a&gt;
+    {%if user.is_staff%}
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/inspector_list/'" value="Inspectors"/&gt;&lt;/a&gt;
+    &lt;a&gt;&lt;input type="button" class="btn btn-lg btn-primary" onclick="location.href='http://127.0.0.1:8000/bypass_list/'" value="Bypasses"/&gt;&lt;/a&gt;
+    {% endif %}
+    &lt;li class="last"&gt; &lt;a class="text-light"&gt; {{user.username}} &lt;strong&gt;|&lt;/strong&gt;&lt;/a&gt; &lt;u&gt;&lt;a class="text-light" href="/logout/"&gt;Log out&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;
+{% else %}
+    &lt;li class="last"&gt;&lt;u&gt;&lt;a class="text-light" href="http://127.0.0.1:8000/register/"&gt; Sign up &lt;/a&gt;&lt;/u&gt; &lt;a&gt;|&lt;/a&gt; &lt;u&gt;&lt;a class="text-light" href="http://127.0.0.1:8000/login/"&gt; Log in&lt;/a&gt;&lt;/u&gt;&lt;/li&gt;
+{% endif %}
+&lt;/nav&gt;
+&lt;/head&gt;
+{% block content %}
+{% endblock %}
+</code></pre>
+<p>выводит меню</p>
+<h2 id="registerhtml">register.html</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"&gt;
+        &lt;meta charset="UTF-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;div class="container-fluid m-2"&gt;
+        &lt;form method="POST" enctype="multipart/form-data"&gt;
+            {% csrf_token %}
+                {% for f in form %}
+            &lt;p&gt;&lt;label class="form-label" for="{{ f.id_for_label }}"&gt;{{f.label}}: &lt;/label&gt;{{ f }}&lt;/p&gt;
+            &lt;div class="form-error"&gt;{{ f.errors }}&lt;/div&gt;
+            {% endfor %}
+            &lt;input class="btn btn-success" type="submit" value="Sign up"&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Используется для регистрации пользователя</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="views.html" class="btn btn-neutral" title="Views"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="views.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
